@@ -1,0 +1,29 @@
+{
+  "name": "weather_app",
+  "version": "1.0.0",
+  "description": "This app Display the weather imformation using an Api",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pratik1234agarwal/Weather_App.git"
+  },
+  "author": "Pratik Agarwal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pratik1234agarwal/Weather_App/issues"
+  },
+  "homepage": "https://github.com/Pratik1234agarwal/Weather_App#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0"
+  },
+  "engines": {
+    "node": "12.18.0"
+  }
+}

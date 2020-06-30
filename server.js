@@ -3,7 +3,10 @@ const fetch = require('node-fetch');
 
 // Setup empty JS object to act as endpoint for all routes
 projectData = {};
-const port = 8080;
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 8000;
+}
 // Require Express to run server and routes
 const express = require('express');
 // Start up an instance of app
