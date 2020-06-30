@@ -23,9 +23,73 @@ h1{
     align-items: center;
     padding-top : 5vh;
     transition:all 0.5s;
+    z-index:1;
+}
+
+.result{
+    margin:auto;
+    display:grid;
+    grid-template-rows:1fr 10fr;
+    background-color: white;
+    width:70vw;
+    height:40vh;
+    padding:5px;
+}
+.back{
+    grid-row-start: 1;
+    align-self: flex-start;
+    text-decoration: none;
+    color:blue;
+    font-weight:bold;
+}
+.back:hover{
+    color:orange;
+}
+.info{
+    grid-row-start:2;
+    display:grid;
+    grid-template-columns :1fr 3fr;
+    grid-template-rows: repeat(4,1fr);
+    grid-gap:5px;
+    font-size:2vw;
+    text-align:center;
+    justify-content: center;
 }
 
 
+.image{
+    grid-area: 1 / 1 / 4 / 2;
+    border:1px solid rgba(0,0,0,0.5);
+    background-position: center;
+    background-size:cover;
+}
+
+.cloudy{
+    background-image: url('./images/cloudy.png');
+    background-image: cover;
+}
+.rainy{
+    background-image: url('./images/rainy.png');
+}
+
+.cur__temp{
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.max_min{
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.humidity{
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.info_feel{
+    text-align :left;
+    margin-top: 10px;
+    border-top:2px solid rgba(0,50,50,0.7);
+    grid-area: 4 / 1 / 5 / 3;
+}
 
 .zip{
     padding: 0.5vw;
@@ -37,15 +101,39 @@ h1{
     font-size:0.8em;
     width:50%;
 }
-@media(min-width:600px){
+@media(min-width:600px) and (max-width:900px){
     .container{
         width:50vw;
     }
+    .result{
+        width:50vw;
+    }
     .zip{
-        font-size:1.5em;
+        font-size:1.2em;
     }
     .feeling{
-        font-size:1.5em;
+        font-size:1.2em;
+    }
+    .info{
+        font-size:2vw;
+    }
+}
+
+@media(min-width : 900px){
+    .container{
+        width:50vw;
+    }
+    .result{
+        width:50vw;
+    }
+    .zip{
+        font-size:1.2em;
+    }
+    .feeling{
+        font-size:1.2em;
+    }
+    .info{
+        font-size:1.7vw;
     }
 }
 
@@ -76,3 +164,8 @@ h1{
 .invisible{
     display:none;
 }
+
+
+/*.blur{
+    backdrop-filter: blur(5px);
+}*/

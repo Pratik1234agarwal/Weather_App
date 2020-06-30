@@ -41,12 +41,10 @@ const apiKey = "&appid=27b5467a4be2c6107b1d2e0c7ba4054b";
 
 // setting up GET request
 const getData = async(url='') => {
-    console.log(url);
     const request = await fetch(url);
     try{
         projectData = await request.json();
-        console.log("Sending data :");
-        console.log(projectData);
+        return projectData;
     }
     catch(error){
         console.log("error ",error);
@@ -54,15 +52,13 @@ const getData = async(url='') => {
 }
 
 
-app.post('/weather',function(req,res){
+app.post('/weather',async(req,res)=>{
     url = baseUrl+req.body.pin+apiKey;
-    let data = getData(url);
+    programData = await getData(url);
     res.send({message:"Done"});
 });
 
 
 app.get('/all',function(req,res){
-    console.log("Sending data to the Client Code");
-    console.log(projectData);
     res.send(projectData);
 });

@@ -7,19 +7,29 @@
       href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type='text/css' href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-    <h1> Weather Journal App</h1>
-    <div class='container input'>
-      <input type='text' class='zip form' placeholder="Enter Zipcode">
-      <input type='text' class='feeling form' placeholder="How are You feeling today">
-      <button class='btn'>Submit</button>
+    <h1>Weather Journal App</h1>
+    <div class="container input">
+      <input type="text" class="zip form" placeholder="Enter Zipcode" />
+      <input
+        type="text"
+        class="feeling form"
+        placeholder="How are You feeling today"
+      />
+      <button class="btn">Generate</button>
     </div>
-    <div class='container result invisible'>
-      <h3 class='cur__temp'>Temp is : </h3>
-      <h4 class="max_min">Max :  Min: </h4>
-      <h4 class="humidity">Humidity : </h4>
+    <div class="result invisible">
+      <a href="index.html" class="back"> < Back</a>
+      <div class="info">
+        <!-- <div class='image cloudy'></div> -->
+        <div class='image cloudy'></div>
+        <div class="cur__temp">Temp is :</div>
+        <div class="max_min">Max : Min:</div>
+        <div class="humidity">Humidity :</div>
+        <div class='info_feel'>How do you feel : Great </div>
+      </div>
     </div>
     <script src="app.js" type="text/javascript"></script>
   </body>
