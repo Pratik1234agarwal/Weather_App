@@ -33,7 +33,7 @@ function listening(){
     console.log("Listening on port : "+port);
 }
 
-const baseUrl = "http://api.openweathermap.org/data/2.5/weather?units=metric&q=";
+const baseUrl = "http://api.openweathermap.org/data/2.5/weather?units=imperial&zip=";
 const apiKey = "&appid=27b5467a4be2c6107b1d2e0c7ba4054b";
 
 

@@ -12,23 +12,24 @@
   <body>
     <h1>Weather Journal App</h1>
     <div class="container input">
-      <input type="text" class="zip form" placeholder="Enter Zipcode" />
+      <input type="text" class="zip form" id="zip" placeholder="Enter Zipcode Here" />
       <input
         type="text"
         class="feeling form"
+        id="feeling"
         placeholder="How are You feeling today"
       />
-      <button class="btn">Generate</button>
+      <button class="btn" id="generate">Generate</button>
     </div>
     <div class="result invisible">
       <a href="index.html" class="back"> < Back</a>
       <div class="info">
         <!-- <div class='image cloudy'></div> -->
         <div class='image cloudy'></div>
-        <div class="cur__temp">Temp is :</div>
+        <div class="cur__temp" id='temp'>Temp is :</div>
         <div class="max_min">Max : Min:</div>
         <div class="humidity">Humidity :</div>
-        <div class='info_feel'>How do you feel : Great </div>
+        <div class='info_feel' id="#content">How do you feel : Great </div>
       </div>
     </div>
     <script src="app.js" type="text/javascript"></script>
